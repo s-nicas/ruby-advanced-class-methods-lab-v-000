@@ -48,7 +48,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(file)
-  song = song.new
+  song = Song.new
   mp3_file_to_array = file.delete('.mp3').split(' - ')
 
   song.name = mp3_file_to_array[1]
