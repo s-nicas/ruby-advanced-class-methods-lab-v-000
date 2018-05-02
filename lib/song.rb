@@ -53,18 +53,20 @@ def self.new_from_filename(file)
 
   song.name = mp3_file_to_array[1]
   song.artist_name = mp3_file_to_array[0]
+  song 
 
 end
 
 def self.create_from_filename(file)
   self.new_from_filename(file)
-  self.save 
-end 
+  self.save
+end
 
 def self.destroy_all
   self.all
-
 end 
+
+end
 
 
 
