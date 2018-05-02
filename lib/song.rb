@@ -50,7 +50,6 @@ end
 def self.new_from_filename(file)
   song = Song.new
    mp3_file_to_array = file.chomp('.mp3').split(' - ')
-
   song.name = mp3_file_to_array[1]
   song.artist_name = mp3_file_to_array[0]
   song
@@ -59,14 +58,11 @@ end
 
 def self.create_from_filename(file)
   self.new_from_filename(file).save
-
 end
 
 def self.destroy_all
   self.all.clear
 end
-
-
 
 
 
