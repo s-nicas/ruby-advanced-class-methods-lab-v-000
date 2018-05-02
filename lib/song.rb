@@ -58,14 +58,14 @@ def self.new_from_filename(file)
 end
 
 def self.create_from_filename(file)
-  self.new_from_filename(file).save 
+  self.new_from_filename(file).save
 
 end
-#
-# def self.destroy_all
-#   self.all
-# end
-#
+
+def self.destroy_all
+  self.all.Clear
+end
+
 
 
 
