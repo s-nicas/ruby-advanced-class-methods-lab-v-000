@@ -15,7 +15,6 @@ class Song
     new_song = Song.new
     new_song.save
     new_song
-
   end
 
   def self.new_by_name(name)
@@ -53,7 +52,6 @@ def self.new_from_filename(file)
   song.name = mp3_file_to_array[1]
   song.artist_name = mp3_file_to_array[0]
   song
-
 end
 
 def self.create_from_filename(file)
